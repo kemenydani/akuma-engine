@@ -1,0 +1,60 @@
+@import "colors";
+
+
+    hr {
+		border: 0;
+		height: 0;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-top: 1px solid color($alias, light) !important;
+    }
+    
+    form {
+		overflow: visible;
+		margin: 0px !important;
+		padding: 0px !important;
+	
+		select {
+			display: block;
+			option,  option:first-child {
+				color: color($alias, light) !important;
+			}
+		}
+		textarea {
+			resize:vertical;
+			&.small {
+				height: 100px;
+			}
+			&.medium {
+				height: 200px;
+			}
+			&.big {
+				height: 300px
+			}
+		}
+		input, input:not([type="submit"]), select, textarea {
+			color: color($alias, medium) !important;
+			border: 1px solid color($alias, light);
+			padding: 7.5px 7.5px 7.5px 7.5px !important;
+			&:focus {
+				outline: 0;
+				border: 1px solid color($alias, medium);
+			}
+			&::-webkit-input-placeholder {
+			   color: color($alias, light);
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			   color: color($alias, light);
+			}
+			&:-moz-placeholder {  /* Firefox 19+ */
+			   color: color($alias, light);
+			}
+			&:-ms-input-placeholder {
+			   color: color($alias, light);
+			}
+			-webkit-box-shadow: inset 0px -10px 13px -9px rgba(0,0,0, 0.05);
+			-moz-box-shadow: inset 0px -10px 13px -9px rgba(0,0,0, 0.05);
+			box-shadow: inset 0px -10px 13px -9px rgba(0,0,0, 0.05);
+		}
+    }
+

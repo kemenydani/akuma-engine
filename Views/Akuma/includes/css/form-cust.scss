@@ -1,0 +1,11 @@
+@import "color-theme";
+
+.form-cust {
+    .field {
+		position: relative;
+		padding: 15px 0px 15px 0px;
+		label {
+			display: block;
+		}
+    }
+}

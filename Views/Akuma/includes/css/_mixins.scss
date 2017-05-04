@@ -1,0 +1,33 @@
+@mixin aspect-ratio($width, $height) {
+    
+    position: relative;
+    
+    &:before {
+	display: block;
+	content: "";
+	width: 100%;
+	padding-top: ($height / $width) * 100%;
+    }
+  
+    > * {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    }
+  
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin rounded-corner($arc) {
+    -moz-border-radius: $arc;
+    -webkit-border-radius: $arc;
+    border-radius: $arc;  
+}

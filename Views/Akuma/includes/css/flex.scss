@@ -1,0 +1,145 @@
+@mixin display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin flex-grow($value) {
+  -webkit-flex-grow: $value;
+  flex-grow: $value;
+}
+
+@mixin flex-direction($value) {
+  -webkit-flex-grow: $value;
+  flex-grow: $value;
+}
+
+@mixin flex-shrink($value) {
+  -webkit-flex-shrink: $value;
+  flex-shrink: $value;
+}
+
+@mixin flex-basis($value) {
+  -webkit-flex-basis: $value;
+  flex-basis: $value;
+}
+
+
+@mixin flex($value) {
+  -webkit-flex: $value;
+  flex: $value;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
+
+@mixin align-items($value) {
+  -webkit-align-content: $value;
+  align-content: $value;
+}
+
+@mixin align-self($value) {
+  -webkit-align-self: $value;
+  align-self: $value;
+}
+
+@mixin align-content($value) {
+  -webkit-content-self: $value;
+  align-content: $value;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.flex-self-align-end {
+  @include align-self(flex-end);
+}
+
+.flex-self-align-start {
+  @include align-self(flex-start);
+}
+
+.flex-self-align-center {
+  @include align-self(center);
+}
+
+.flex-justify-content-center {
+  @include justify-content(center);
+}
+
+.flex-align-content-center {
+  @include align-content(center);
+}
+
+.flex-align-items-center {
+  @include align-items(center);
+}
+
+.flex-align-items-space-between {
+  @include align-items(space-between);
+}
+
+.flex-justify-content-space-between {
+  @include justify-content(space-between);
+}
+
+.display-flex {
+  @include display-flex;
+}
+
+.flex-wrap {
+  @include flex-wrap(wrap);
+}
+
+.flex-directin-row {
+  @include flex-direction(row);
+}
+
+.flex-directin-column {
+  @include flex-direction(column);
+}
+
+.flex-wrap {
+  @include flex-wrap(wrap);
+}
+
+.flex-nowrap {
+  @include flex-wrap(nowrap);
+}
+
+.flex-1 {
+  flex: 1 !important;
+}
+
+.flex-flow-row {
+  flex-flow: row wrap;
+}
+
+.flex-flow-col {
+  flex-flow: column wrap;
+}
+
+.flex-pad-container {
+  @include display-flex;
+  @include flex-wrap(wrap);
+  margin-left: -15px;
+  margin-top: -15px;
+
+  > * {
+    @extend .flex-1;
+    //padding: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+
+  }
+}
+
+

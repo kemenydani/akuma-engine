@@ -1,0 +1,40 @@
+$dark-grey-blue: #37434b;
+$info-text: #888888;
+
+$colors: (
+    light: (
+	default: #ffffff,
+	light: #eaeaea,
+	medium: #888888,
+	dark: #111111,
+	active: #00ccff
+    ),
+    dark: (
+	default: #000000,
+	light: #ffffff,
+	medium: #777777,
+	dark: #000000,
+	active: #777777
+    ),
+    dark-blue: (
+	default: #000000,
+	light: #ffffff,
+	medium: #a8bfce,
+	dark: #38454e,
+	active: #a8bfce
+    )
+);
+
+@function color($color-name, $color-variant:null) {
+ 
+    @if ($color-variant != null) {
+	
+	@return map-get(map-get($colors, $color-name), $color-variant);
+	
+    } @else {
+	
+	@return map-get($colors, $color-name);
+	
+    }
+    
+}

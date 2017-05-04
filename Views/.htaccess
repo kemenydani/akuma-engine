@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^webdevplace.eu$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.webdevplace.eu$
+RewriteCond %{REQUEST_URI} !main/
+RewriteRule (.*) /main/$1 [L]

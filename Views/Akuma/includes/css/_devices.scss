@@ -1,0 +1,33 @@
+@mixin device($alias) {
+    
+    @if $alias == phone {
+	@media (max-width: 768px) { 
+	    @content; 
+	}
+    }
+    
+    @if $alias == tablet {
+	@media (min-width:769px) and (max-width: 920px) { 
+	    @content; 
+	}
+    }
+
+    @else if $alias == desktop-sm {
+	@media (min-width: 921px) and (max-width: 1100px) { 
+	    @content; 
+	}
+    }
+    
+    @else if $alias == desktop {
+	@media (min-width: 1101px) { 
+	    @content; 
+	}
+    }
+/*
+    @else if $alias == desktop-lg {
+	@media (min-width: 1101px)  { 
+	    @content; 
+	}
+    }
+*/ 
+}

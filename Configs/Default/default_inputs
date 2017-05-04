@@ -1,0 +1,52 @@
+<?php
+
+return $default_inputs = [
+    
+// [id] START
+    'id' => [
+        
+        'hidden', // Visibility
+        'type' => 'number', // Input type="number"
+        
+        'display' => [
+            'label' => 'Item identifier', // Input label
+            'placeholder' => '', // Input placeholder
+            'note' => '', // Input usage guide aka: "note" how to use
+        ],
+        
+        'value' => '' // Value of the input field value="somevalue"
+        
+    ], 
+    
+// [number] START
+    'number' => [
+
+        'type' => 'number', // Input type="number"
+        
+        'display' => [
+            'label' => 'Number', // Input label
+            'placeholder' => 'Enter a number here', // Input placeholder
+            'note' => 'This field a accepts only numbers.', // Input usage guide aka: "note" how to use
+        ],
+        
+        'value' => '' // Value of the input field value="somevalue"
+        
+    ], 
+
+// [text] START
+    'text' => [
+
+        'type' => 'text', // Input type="text"
+        
+        'display' => [
+            'label' => 'Text', // Input label
+            'placeholder' => 'Enter some text here', // Input placeholder
+            'note' => 'This field a accepts text and numbers too.', // Input usage guide aka: "note" how to use
+        ],
+        
+        'value' => '' // Value of the input field value="somevalue"
+        
+    ],
+    
+    
+];
