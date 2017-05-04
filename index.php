@@ -17,8 +17,6 @@ define("__ROOT__", __DIR__);
 
 if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' or $_SERVER['REMOTE_ADDR'] == '::1'){
     $db = new PDO('mysql:host=localhost;dbname=akuma', 'root', '');
-} else {
-    $db = new PDO('mysql:host=mysql.hostinger.hu;dbname=u461734231_dev1;charset=utf8', 'u461734231_dev1', 'webdevplace.eu');
 }
 
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
