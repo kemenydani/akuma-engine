@@ -14,7 +14,6 @@ define("LOCATION", $_SERVER['REQUEST_URI']);
 define("BASE" , preg_replace('/[^\/]*$/','',$_SERVER["PHP_SELF"]));
 define("__ROOT__", __DIR__);
 
-
 if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' or $_SERVER['REMOTE_ADDR'] == '::1'){
     $db = new PDO('mysql:host=localhost;dbname=akuma', 'root', '');
 }
