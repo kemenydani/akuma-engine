@@ -1,0 +1,163 @@
+@import "devices";
+@import "colors";
+
+#news {
+	height: 600px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+	&::after {
+		content: "";
+		background-image: url("../images/bg-widget-news.jpg");
+		opacity: 1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;
+	}
+	@include device(phone){
+		display: none;
+		height: calc( ((100vw) / 10 * 5) );
+		.container {
+		  	padding: 0;
+		}
+	}
+	@include device(tablet){
+		height: calc( ((100vw) / 10 * 5) );
+		.container {
+		  	padding: 0;
+		}
+	}
+	@include device(desktop-sm){
+		height: calc( ((100vw) / 10 * 5) );
+		.container {
+		  	padding: 0;
+		}
+	}
+  	> .news-list {
+		flex: 1;
+		display: flex;
+		flex-flow: row wrap;
+		position: relative;
+		.news-list-item {
+			background-color: tomato;
+			overflow: hidden;
+			position: relative;
+			width: calc(100%/2);
+			max-width: calc(100%/2);
+			height: calc(100%/2);
+			max-height: calc(100%/2);
+	  		.overlay {
+				top: 0;
+				left: 0;
+				z-index: 10;
+				width: 100%;
+				height: 100%;
+				display: block;
+				position: absolute;
+				background: rgba(0, 0, 0, 0);
+				transition:.5s;
+				transition-timing-function: ease-in-out;
+				-webkit-transition-timing-function: ease-in-out;
+				.content {
+					opacity: 0;
+					transition:.5s;
+					transition-timing-function: ease-in-out;
+					-webkit-transition-timing-function: ease-in-out;
+					display: flex;
+					
+					flex-direction: column;
+					flex-wrap: nowrap;
+					align-items: flex-start;
+					color: $color-light;
+					height: 100%;
+					position: relative;
+					padding: 80px 30px 30px 30px;
+					@include device(phone){
+						padding: 0px;
+						justify-content: center;
+						align-items: center;
+						p {
+						  	display: none;
+						}
+						.read-more {
+						  	display: none;
+						}
+					}
+					@include device(tablet){
+						padding: 0px;
+						justify-content: center;
+						align-items: center;
+						p {
+						  	display: none;
+						}
+						.read-more {
+						  	display: none;
+						}
+					}
+					@include device(desktop-sm){
+						padding: 0px;
+						justify-content: center;
+						align-items: center;
+						p {
+						  	display: none;
+						}
+						.read-more {
+						  	display: none;
+						}
+					}
+					.video-icon {
+						border: 1px solid $color-light;
+						border-radius: 100%;
+						height: 50px;
+						min-height: 50px;
+						width: 50px;
+						display: flex;
+						justify-content: center;
+						flex-direction: column;
+						flex-wrap: nowrap;
+						align-items: center;
+					}
+					.read-more {
+						color: $color-brand;
+						font-family: MS-Bold;
+						margin-top: -10px;
+					}
+					h1 {
+						font-size: 2.1vw;
+						line-height: 1vh;
+						font-family: MS-ExtraLight;
+						margin-bottom: 5px;
+						@include device(phone){
+						  	font-size: 3vw;
+						}
+						@include device(tablet){
+						  	font-size: 2.8vw;
+						}
+						@include device(desktop-sm){
+						  	font-size: 2.4vw;
+						}
+					}
+					a {
+					  color: $color-light;
+					}
+				}
+				&:hover {
+					background: rgba(0, 0, 0, 0.8);
+					.content {
+					  	opacity: 1;
+					}
+				}
+	  		}
+			> img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+  	}
+}
