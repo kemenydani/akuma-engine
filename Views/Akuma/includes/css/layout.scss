@@ -939,7 +939,7 @@ button, .button {
 	    overflow: hidden;
 	    display: flex;
 	    justify-content: center;
-	    background: $color-grey;
+	    background-image: url("../images/bg-widget-news.jpg");
 	    width: 100%;
 	    
 	    @include device(phone){

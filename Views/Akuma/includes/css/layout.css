@@ -1320,7 +1320,7 @@ button, .button {
       overflow: hidden;
       display: flex;
       justify-content: center;
-      background: #929292;
+      background-image: url("../images/bg-widget-news.jpg");
       width: 100%;
       /*
           @else if $alias == desktop-lg {
