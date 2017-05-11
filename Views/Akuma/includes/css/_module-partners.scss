@@ -1,0 +1,28 @@
+@import "colors";
+
+.partner-list-item {
+	background: green;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@include device(phone){
+	  	align-items: center;
+	}
+	@include device(tablet){
+	  	align-items: center;
+	}
+  	.partner-list-item-content {
+		img {
+			width: 250px;
+			float: right;
+			margin-left: 30px;
+			@include device(phone){
+				margin-left: 0px;
+				margin-bottom: $margin-default * 2 + px;
+			}
+		}
+    }
+	button {
+	  	margin-top: $margin-default * 2 + px;
+	}
+}
