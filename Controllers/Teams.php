@@ -125,7 +125,7 @@ class Teams {
         $Smarty->assign('pages', $pages);
         $Smarty->assign('current', $current);
         */
-        $Smarty->assign('items', $this->order($items));
+        $Smarty->assign('teams', $this->order($items));
         $Smarty->display('Teams/_all.tpl');
     }
 
