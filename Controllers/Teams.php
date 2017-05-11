@@ -113,6 +113,13 @@ class Teams {
         $stmt->execute();
         $items = $stmt->fetchAll(\PDO::FETCH_ASSOC);
         
+        foreach($items as $key => $team){
+	        $stmt = $db->prepare("SELECT * FROM ".DBPREFIX."_members m WHERE m.team_id = {$team['team_id']} AND m.active = 1");
+	        $stmt->execute();
+	        $members = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+	        $items[$key]['teams'] = $members === false ? [] : $members;
+        }
+        
         /*
         $Smarty->assign('total', $total->rows);
         $Smarty->assign('pages', $pages);
@@ -120,7 +127,6 @@ class Teams {
         */
         $Smarty->assign('items', $this->order($items));
         $Smarty->display('Teams/_all.tpl');
-
     }
 
 
