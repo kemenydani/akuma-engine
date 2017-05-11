@@ -3,7 +3,7 @@
 @import "devices";
 @import "mixins";
 @import "flex";
-@import "colors";
+@import "variables";
 
 @import "component-pagination";
 @import "component-form";
@@ -16,15 +16,11 @@
 @import "component-widget-teams";
 @import "component-widget-media";
 @import "component-widget-news";
+@import "component-footer";
 
 @import "module-forum";
 @import "module-partner";
 @import "module-download";
-
-$margin-default: 15;
-
-$font-type-text: MS-Light;
-$font-type-medium: MS-Medium;
 
 html, body {
     height: 100%;
@@ -382,113 +378,5 @@ hr {
 	}
 
     }
-    
-    #footer {
-	height: 440px;
-	min-height: 440px;
-	max-height: 440px;
-	overflow: hidden;
-	background-color: lighten($color-dark, 1);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content:space-between;
-	flex-wrap: nowrap;
-	position: relative;
-	color: $color-light;
-	
-	@include device(phone){
-	    height: 60px;
-	    min-height: 60px;
-	    max-height: 60px;
-	}
-
-	@include device(tablet){
-	    height: 60px;
-	    min-height: 60px;
-	    max-height: 60px;
-	}
-	
-	&:before {
-	    content: ' ';
-	    display: block;
-	    position: absolute;
-	    left: 0;
-	    top: 0;
-	    width: 100%;
-	    height: 100%;
-	    z-index: 1;  
-	    background-image: url("../images/bg-footer.png");
-	    background-repeat: no-repeat;
-	    background-position: center;
-	    opacity: 0.05;
-	}
-	
-	.container-fluid {
-	    z-index: 2;
-	    display: flex;
-	    justify-content: center;
-	}
-	
-	.about {
-	    width: 60%;
-	    //line-height: 30px;
-	    
-	    @include device(phone){
-		display: none;
-	    }
-
-	    @include device(tablet){
-		display: none;
-	    }
-	    
-	    @include device(desktop-sm){
-		width: 100%;
-	    }
-	    
-	}
-	
-	.navigation {
-	    width: 60%;
-	    justify-content: space-between;
-	    height: 60px;
-	    
-	    @include device(phone){
-		display: none;   }
-
-	    @include device(tablet){
-		display: none;
-	    }
-	    
-	    @include device(desktop-sm){
-		width: 100%;
-	    }
-	}
-
-	.info-bar > .container{
-	    height: 60px;
-	    font-family: $font-type-medium;
-	    display: flex;
-	    flex-direction: row;
-	    
-	    .copyright {
-		height: 100%;
-		display: flex;
-		align-items: center;
-		flex: 1;
-		flex-wrap: nowrap;
-		
-		@include device(phone){
-		    justify-content: center;
-		}
-
-		@include device(tablet){
-		    justify-content: center;
-		}
-		
-	    }
-	    
-	}
-    }
-    
+ 
 }

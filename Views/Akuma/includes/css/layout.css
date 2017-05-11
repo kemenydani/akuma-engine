@@ -544,6 +544,72 @@ template {
     margin-left: 15px;
     margin-top: 15px; }
 
+@font-face {
+  font-family: OW-Regular;
+  src: url("../fonts/Oswald-Regular.ttf"); }
+@font-face {
+  font-family: OW-Light;
+  src: url("../fonts/Oswald-Light.ttf"); }
+@font-face {
+  font-family: OW-ExtraLight;
+  src: url("../fonts/Oswald-ExtraLight.ttf"); }
+@font-face {
+  font-family: OS-Bold;
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: OS-BoldItalic;
+  src: url("../fonts/OpenSans-BoldItalic.ttf"); }
+@font-face {
+  font-family: OS-ExtraBold;
+  src: url("../fonts/OpenSans-ExtraBold.ttf"); }
+@font-face {
+  font-family: OS-ExtraBoldItalic;
+  src: url("../fonts/OpenSans-ExtraBoldItalic.ttf"); }
+@font-face {
+  font-family: OS-Italic;
+  src: url("../fonts/OpenSans-Italic.ttf"); }
+@font-face {
+  font-family: OS-Light;
+  src: url("../fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: OS-LightItalic;
+  src: url("../fonts/OpenSans-LightItalic.ttf"); }
+@font-face {
+  font-family: OS-Regular;
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: OS-SemiBold;
+  src: url("../fonts/OpenSans-Semibold.ttf"); }
+@font-face {
+  font-family: OS-SemiBoldItalic;
+  src: url("../fonts/OpenSans-SemiboldItalic.ttf"); }
+@font-face {
+  font-family: MS-Bold;
+  src: url("../fonts/Montserrat-Bold.otf"); }
+@font-face {
+  font-family: MS-Black;
+  src: url("../fonts/Montserrat-Black.otf"); }
+@font-face {
+  font-family: MS-ExtraBold;
+  src: url("../fonts/Montserrat-ExtraBold.otf"); }
+@font-face {
+  font-family: MS-ExtraLight;
+  src: url("../fonts/Montserrat-ExtraLight.otf"); }
+@font-face {
+  font-family: MS-Light;
+  src: url("../fonts/Montserrat-Light.otf"); }
+@font-face {
+  font-family: MS-Medium;
+  src: url("../fonts/Montserrat-Medium.otf"); }
+@font-face {
+  font-family: MS-Regular;
+  src: url("../fonts/Montserrat-Regular.otf"); }
+@font-face {
+  font-family: MS-SemiBold;
+  src: url("../fonts/Montserrat-SemiBold.otf"); }
+@font-face {
+  font-family: MS-Thin;
+  src: url("../fonts/Montserrat-Thin.otf"); }
 .container.pagination-container {
   display: flex;
   justify-content: center;
@@ -1498,6 +1564,158 @@ button, .button {
         height: 100%;
         object-fit: cover; }
 
+#footer {
+  height: 440px;
+  min-height: 440px;
+  max-height: 440px;
+  overflow: hidden;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: relative;
+  color: #ffffff;
+  /*
+      @else if $alias == desktop-lg {
+  	@media (min-width: 1101px)  { 
+  	    @content; 
+  	}
+      }
+  */
+  /*
+      @else if $alias == desktop-lg {
+  	@media (min-width: 1101px)  { 
+  	    @content; 
+  	}
+      }
+  */ }
+  @media (max-width: 768px) {
+    #footer {
+      height: 60px;
+      min-height: 60px;
+      max-height: 60px; } }
+  @media (min-width: 769px) and (max-width: 920px) {
+    #footer {
+      height: 60px;
+      min-height: 60px;
+      max-height: 60px; } }
+  #footer:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url("../images/bg-footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05; }
+  #footer .container-fluid {
+    z-index: 2;
+    display: flex;
+    justify-content: center; }
+  #footer .about {
+    width: 60%;
+    /*
+        @else if $alias == desktop-lg {
+    	@media (min-width: 1101px)  { 
+    	    @content; 
+    	}
+        }
+    */
+    /*
+        @else if $alias == desktop-lg {
+    	@media (min-width: 1101px)  { 
+    	    @content; 
+    	}
+        }
+    */
+    /*
+        @else if $alias == desktop-lg {
+    	@media (min-width: 1101px)  { 
+    	    @content; 
+    	}
+        }
+    */ }
+    @media (max-width: 768px) {
+      #footer .about {
+        display: none; } }
+    @media (min-width: 769px) and (max-width: 920px) {
+      #footer .about {
+        display: none; } }
+    @media (min-width: 921px) and (max-width: 1100px) {
+      #footer .about {
+        width: 100%; } }
+  #footer .navigation {
+    width: 60%;
+    justify-content: space-between;
+    height: 60px;
+    /*
+        @else if $alias == desktop-lg {
+    	@media (min-width: 1101px)  { 
+    	    @content; 
+    	}
+        }
+    */
+    /*
+        @else if $alias == desktop-lg {
+    	@media (min-width: 1101px)  { 
+    	    @content; 
+    	}
+        }
+    */
+    /*
+        @else if $alias == desktop-lg {
+    	@media (min-width: 1101px)  { 
+    	    @content; 
+    	}
+        }
+    */ }
+    @media (max-width: 768px) {
+      #footer .navigation {
+        display: none; } }
+    @media (min-width: 769px) and (max-width: 920px) {
+      #footer .navigation {
+        display: none; } }
+    @media (min-width: 921px) and (max-width: 1100px) {
+      #footer .navigation {
+        width: 100%; } }
+  #footer .info-bar > .container {
+    height: 60px;
+    font-family: MS-Medium;
+    display: flex;
+    flex-direction: row; }
+    #footer .info-bar > .container .copyright {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      flex-wrap: nowrap;
+      /*
+          @else if $alias == desktop-lg {
+      	@media (min-width: 1101px)  { 
+      	    @content; 
+      	}
+          }
+      */
+      /*
+          @else if $alias == desktop-lg {
+      	@media (min-width: 1101px)  { 
+      	    @content; 
+      	}
+          }
+      */ }
+      @media (max-width: 768px) {
+        #footer .info-bar > .container .copyright {
+          justify-content: center; } }
+      @media (min-width: 769px) and (max-width: 920px) {
+        #footer .info-bar > .container .copyright {
+          justify-content: center; } }
+
 .forum-list .forum-list-item {
   display: flex;
   justify-content: space-between;
@@ -1541,6 +1759,72 @@ button, .button {
       font-size: 13px;
       margin: 0px; }
 
+@font-face {
+  font-family: OW-Regular;
+  src: url("../fonts/Oswald-Regular.ttf"); }
+@font-face {
+  font-family: OW-Light;
+  src: url("../fonts/Oswald-Light.ttf"); }
+@font-face {
+  font-family: OW-ExtraLight;
+  src: url("../fonts/Oswald-ExtraLight.ttf"); }
+@font-face {
+  font-family: OS-Bold;
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: OS-BoldItalic;
+  src: url("../fonts/OpenSans-BoldItalic.ttf"); }
+@font-face {
+  font-family: OS-ExtraBold;
+  src: url("../fonts/OpenSans-ExtraBold.ttf"); }
+@font-face {
+  font-family: OS-ExtraBoldItalic;
+  src: url("../fonts/OpenSans-ExtraBoldItalic.ttf"); }
+@font-face {
+  font-family: OS-Italic;
+  src: url("../fonts/OpenSans-Italic.ttf"); }
+@font-face {
+  font-family: OS-Light;
+  src: url("../fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: OS-LightItalic;
+  src: url("../fonts/OpenSans-LightItalic.ttf"); }
+@font-face {
+  font-family: OS-Regular;
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: OS-SemiBold;
+  src: url("../fonts/OpenSans-Semibold.ttf"); }
+@font-face {
+  font-family: OS-SemiBoldItalic;
+  src: url("../fonts/OpenSans-SemiboldItalic.ttf"); }
+@font-face {
+  font-family: MS-Bold;
+  src: url("../fonts/Montserrat-Bold.otf"); }
+@font-face {
+  font-family: MS-Black;
+  src: url("../fonts/Montserrat-Black.otf"); }
+@font-face {
+  font-family: MS-ExtraBold;
+  src: url("../fonts/Montserrat-ExtraBold.otf"); }
+@font-face {
+  font-family: MS-ExtraLight;
+  src: url("../fonts/Montserrat-ExtraLight.otf"); }
+@font-face {
+  font-family: MS-Light;
+  src: url("../fonts/Montserrat-Light.otf"); }
+@font-face {
+  font-family: MS-Medium;
+  src: url("../fonts/Montserrat-Medium.otf"); }
+@font-face {
+  font-family: MS-Regular;
+  src: url("../fonts/Montserrat-Regular.otf"); }
+@font-face {
+  font-family: MS-SemiBold;
+  src: url("../fonts/Montserrat-SemiBold.otf"); }
+@font-face {
+  font-family: MS-Thin;
+  src: url("../fonts/Montserrat-Thin.otf"); }
 .partner-list-item {
   background: green;
   display: flex;
@@ -1967,156 +2251,5 @@ hr {
       #wrapper #content #about button {
         align-self: center;
         margin: 10px; }
-  #wrapper #footer {
-    height: 440px;
-    min-height: 440px;
-    max-height: 440px;
-    overflow: hidden;
-    background-color: #0d0d0d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    position: relative;
-    color: #ffffff;
-    /*
-        @else if $alias == desktop-lg {
-    	@media (min-width: 1101px)  { 
-    	    @content; 
-    	}
-        }
-    */
-    /*
-        @else if $alias == desktop-lg {
-    	@media (min-width: 1101px)  { 
-    	    @content; 
-    	}
-        }
-    */ }
-    @media (max-width: 768px) {
-      #wrapper #footer {
-        height: 60px;
-        min-height: 60px;
-        max-height: 60px; } }
-    @media (min-width: 769px) and (max-width: 920px) {
-      #wrapper #footer {
-        height: 60px;
-        min-height: 60px;
-        max-height: 60px; } }
-    #wrapper #footer:before {
-      content: ' ';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      background-image: url("../images/bg-footer.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0.05; }
-    #wrapper #footer .container-fluid {
-      z-index: 2;
-      display: flex;
-      justify-content: center; }
-    #wrapper #footer .about {
-      width: 60%;
-      /*
-          @else if $alias == desktop-lg {
-      	@media (min-width: 1101px)  { 
-      	    @content; 
-      	}
-          }
-      */
-      /*
-          @else if $alias == desktop-lg {
-      	@media (min-width: 1101px)  { 
-      	    @content; 
-      	}
-          }
-      */
-      /*
-          @else if $alias == desktop-lg {
-      	@media (min-width: 1101px)  { 
-      	    @content; 
-      	}
-          }
-      */ }
-      @media (max-width: 768px) {
-        #wrapper #footer .about {
-          display: none; } }
-      @media (min-width: 769px) and (max-width: 920px) {
-        #wrapper #footer .about {
-          display: none; } }
-      @media (min-width: 921px) and (max-width: 1100px) {
-        #wrapper #footer .about {
-          width: 100%; } }
-    #wrapper #footer .navigation {
-      width: 60%;
-      justify-content: space-between;
-      height: 60px;
-      /*
-          @else if $alias == desktop-lg {
-      	@media (min-width: 1101px)  { 
-      	    @content; 
-      	}
-          }
-      */
-      /*
-          @else if $alias == desktop-lg {
-      	@media (min-width: 1101px)  { 
-      	    @content; 
-      	}
-          }
-      */
-      /*
-          @else if $alias == desktop-lg {
-      	@media (min-width: 1101px)  { 
-      	    @content; 
-      	}
-          }
-      */ }
-      @media (max-width: 768px) {
-        #wrapper #footer .navigation {
-          display: none; } }
-      @media (min-width: 769px) and (max-width: 920px) {
-        #wrapper #footer .navigation {
-          display: none; } }
-      @media (min-width: 921px) and (max-width: 1100px) {
-        #wrapper #footer .navigation {
-          width: 100%; } }
-    #wrapper #footer .info-bar > .container {
-      height: 60px;
-      font-family: MS-Medium;
-      display: flex;
-      flex-direction: row; }
-      #wrapper #footer .info-bar > .container .copyright {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex: 1;
-        flex-wrap: nowrap;
-        /*
-            @else if $alias == desktop-lg {
-        	@media (min-width: 1101px)  { 
-        	    @content; 
-        	}
-            }
-        */
-        /*
-            @else if $alias == desktop-lg {
-        	@media (min-width: 1101px)  { 
-        	    @content; 
-        	}
-            }
-        */ }
-        @media (max-width: 768px) {
-          #wrapper #footer .info-bar > .container .copyright {
-            justify-content: center; } }
-        @media (min-width: 769px) and (max-width: 920px) {
-          #wrapper #footer .info-bar > .container .copyright {
-            justify-content: center; } }
 
 /*# sourceMappingURL=layout.css.map */
