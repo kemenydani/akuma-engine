@@ -1,0 +1,35 @@
+@import "devices";
+@import "colors";
+
+.files-container {
+  	.file-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: space-between;
+		justify-content: space-between;
+		align-items: stretch;
+		.file-list-item {
+			min-width: calc(96%/2);
+			width: calc(96%/2);
+			max-width: calc(96%/2);
+			margin-bottom: 40px;
+			@include device(phone){
+				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+			}
+			h2 {
+				padding: 0px;
+				margin: 0px;
+				color: $color-brand;
+			}
+			p {
+				padding: 0px;
+				margin: 0px;
+				line-height: 25px;
+				text-align: justify;
+			}
+		}
+	}
+}
