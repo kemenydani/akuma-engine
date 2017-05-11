@@ -1,0 +1,138 @@
+@import "colors";
+@import "devices";
+
+#teams {
+	padding: 40px 0px 40px 0px;
+	display: flex;
+	justify-content: center;
+	background-image: url("../images/bg-widget-teams.jpg");
+	background-size: cover;
+	color: $color-light;
+	width: 100%;
+	> .container {
+		align-content: center;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		h1 {
+			text-align: center;
+			margin-bottom: 60px;
+		}
+	}
+  	.team-slider {
+		position: relative;
+		overflow: hidden;
+		.control-button {
+			position: absolute;
+			top: 20px;
+			cursor: pointer;
+			color: $color-grey;
+			z-index: 2;
+			&.prev-team {
+				left: 30%;
+			}
+			&.next-team {
+				right: 30%;
+			}
+			&:hover {
+				color: $color-light;
+			}
+		}
+		.team-list {
+			max-width: 100%;
+			display: flex;
+	  		.team-list-item {
+				width: 100%;
+				min-width: 100%;
+				max-width: 100%;
+				overflow: hidden;
+				position: relative;
+				.team-game {
+					display: flex;
+					justify-content: center;
+					margin-bottom: 20px;
+				}
+				.player-slider {
+		  			position: relative;
+		  			.player-list {
+						max-width: 100%;
+						display: flex;
+						.player-list-item {
+							min-width: 33.3%;
+							max-width: 33.3%;
+							width: 33.3%;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							overflow: hidden;
+							@include device(phone){
+								width: 100%;
+								max-width: 100%;
+								min-width: 100%;
+							}
+							@include device(tablet){
+								width: 50%;
+								max-width: 50%;
+								min-width: 50%;
+							}
+							@include device(desktop-sm){
+								width: 50%;
+								max-width: 50%;
+								min-width: 50%;
+							}
+							.avatar {
+								width: 100px;
+								height: 115px;
+								position:relative;
+								-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+								clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+								overflow: hidden;
+								> img {
+									height: 100%;
+									object-fit: cover;
+								}
+							}
+							p {
+								color: $color-grey;
+								text-align: justify;
+								padding: 0px 28px 0px 28px;
+								flex: 1;
+							}
+			  				.social {
+								width: 30%;
+								display: flex;
+								justify-content: space-around;
+								flex-direction: row;
+								flex-wrap: nowrap;
+								a {
+									color: $color-grey;
+									&:hover {
+									  	color: $color-brand;
+									}
+								}
+			  				}
+						}
+		  			}
+				}
+				.control-button {
+					position: absolute;
+					top: calc(50% - 5.4vw );
+					color: $color-grey;
+					cursor: pointer;
+					&:hover {
+					  	color: $color-light;
+					}
+				}
+				.control-button.prev-payer {
+				  	left: 0px;
+				}
+				.control-button.next-player {
+				  	right: 0px;
+				}
+	  		}
+		}
+  	}
+}

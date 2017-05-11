@@ -937,6 +937,139 @@ button, .button {
         min-width: 48%;
         width: 48%; }
 
+#teams {
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/bg-widget-teams.jpg");
+  background-size: cover;
+  color: #ffffff;
+  width: 100%; }
+  #teams > .container {
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    overflow: hidden; }
+    #teams > .container h1 {
+      text-align: center;
+      margin-bottom: 60px; }
+  #teams .team-slider {
+    position: relative;
+    overflow: hidden; }
+    #teams .team-slider .control-button {
+      position: absolute;
+      top: 20px;
+      cursor: pointer;
+      color: #929292;
+      z-index: 2; }
+      #teams .team-slider .control-button.prev-team {
+        left: 30%; }
+      #teams .team-slider .control-button.next-team {
+        right: 30%; }
+      #teams .team-slider .control-button:hover {
+        color: #ffffff; }
+    #teams .team-slider .team-list {
+      max-width: 100%;
+      display: flex; }
+      #teams .team-slider .team-list .team-list-item {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative; }
+        #teams .team-slider .team-list .team-list-item .team-game {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px; }
+        #teams .team-slider .team-list .team-list-item .player-slider {
+          position: relative; }
+          #teams .team-slider .team-list .team-list-item .player-slider .player-list {
+            max-width: 100%;
+            display: flex; }
+            #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
+              min-width: 33.3%;
+              max-width: 33.3%;
+              width: 33.3%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              overflow: hidden;
+              /*
+                  @else if $alias == desktop-lg {
+              	@media (min-width: 1101px)  { 
+              	    @content; 
+              	}
+                  }
+              */
+              /*
+                  @else if $alias == desktop-lg {
+              	@media (min-width: 1101px)  { 
+              	    @content; 
+              	}
+                  }
+              */
+              /*
+                  @else if $alias == desktop-lg {
+              	@media (min-width: 1101px)  { 
+              	    @content; 
+              	}
+                  }
+              */ }
+              @media (max-width: 768px) {
+                #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
+                  width: 100%;
+                  max-width: 100%;
+                  min-width: 100%; } }
+              @media (min-width: 769px) and (max-width: 920px) {
+                #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
+                  width: 50%;
+                  max-width: 50%;
+                  min-width: 50%; } }
+              @media (min-width: 921px) and (max-width: 1100px) {
+                #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
+                  width: 50%;
+                  max-width: 50%;
+                  min-width: 50%; } }
+              #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .avatar {
+                width: 100px;
+                height: 115px;
+                position: relative;
+                -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                overflow: hidden; }
+                #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .avatar > img {
+                  height: 100%;
+                  object-fit: cover; }
+              #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item p {
+                color: #929292;
+                text-align: justify;
+                padding: 0px 28px 0px 28px;
+                flex: 1; }
+              #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .social {
+                width: 30%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                flex-wrap: nowrap; }
+                #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .social a {
+                  color: #929292; }
+                  #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .social a:hover {
+                    color: #ffcc25; }
+        #teams .team-slider .team-list .team-list-item .control-button {
+          position: absolute;
+          top: calc(50% - 5.4vw );
+          color: #929292;
+          cursor: pointer; }
+          #teams .team-slider .team-list .team-list-item .control-button:hover {
+            color: #ffffff; }
+        #teams .team-slider .team-list .team-list-item .control-button.prev-payer {
+          left: 0px; }
+        #teams .team-slider .team-list .team-list-item .control-button.next-player {
+          right: 0px; }
+
 .forum-list .forum-list-item {
   display: flex;
   justify-content: space-between;
@@ -1613,139 +1746,6 @@ hr {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-    #wrapper #content #teams {
-      padding: 40px 0px 40px 0px;
-      display: flex;
-      justify-content: center;
-      background-image: url("../images/bg-widget-teams.jpg");
-      background-size: cover;
-      color: #ffffff;
-      width: 100%; }
-      #wrapper #content #teams > .container {
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        position: relative;
-        overflow: hidden; }
-        #wrapper #content #teams > .container h1 {
-          text-align: center;
-          margin-bottom: 60px; }
-      #wrapper #content #teams .team-slider {
-        position: relative;
-        overflow: hidden; }
-        #wrapper #content #teams .team-slider .control-button {
-          position: absolute;
-          top: 20px;
-          cursor: pointer;
-          color: #929292;
-          z-index: 2; }
-          #wrapper #content #teams .team-slider .control-button.prev-team {
-            left: 30%; }
-          #wrapper #content #teams .team-slider .control-button.next-team {
-            right: 30%; }
-          #wrapper #content #teams .team-slider .control-button:hover {
-            color: #ffffff; }
-        #wrapper #content #teams .team-slider .team-list {
-          max-width: 100%;
-          display: flex; }
-          #wrapper #content #teams .team-slider .team-list .team-list-item {
-            width: 100%;
-            min-width: 100%;
-            max-width: 100%;
-            overflow: hidden;
-            position: relative; }
-            #wrapper #content #teams .team-slider .team-list .team-list-item .team-game {
-              display: flex;
-              justify-content: center;
-              margin-bottom: 20px; }
-            #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider {
-              position: relative; }
-              #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list {
-                max-width: 100%;
-                display: flex; }
-                #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
-                  min-width: 33.3%;
-                  max-width: 33.3%;
-                  width: 33.3%;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  overflow: hidden;
-                  /*
-                      @else if $alias == desktop-lg {
-                  	@media (min-width: 1101px)  { 
-                  	    @content; 
-                  	}
-                      }
-                  */
-                  /*
-                      @else if $alias == desktop-lg {
-                  	@media (min-width: 1101px)  { 
-                  	    @content; 
-                  	}
-                      }
-                  */
-                  /*
-                      @else if $alias == desktop-lg {
-                  	@media (min-width: 1101px)  { 
-                  	    @content; 
-                  	}
-                      }
-                  */ }
-                  @media (max-width: 768px) {
-                    #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
-                      width: 100%;
-                      max-width: 100%;
-                      min-width: 100%; } }
-                  @media (min-width: 769px) and (max-width: 920px) {
-                    #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
-                      width: 50%;
-                      max-width: 50%;
-                      min-width: 50%; } }
-                  @media (min-width: 921px) and (max-width: 1100px) {
-                    #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item {
-                      width: 50%;
-                      max-width: 50%;
-                      min-width: 50%; } }
-                  #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .avatar {
-                    width: 100px;
-                    height: 115px;
-                    position: relative;
-                    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-                    overflow: hidden; }
-                    #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .avatar > img {
-                      height: 100%;
-                      object-fit: cover; }
-                  #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item p {
-                    color: #929292;
-                    text-align: justify;
-                    padding: 0px 28px 0px 28px;
-                    flex: 1; }
-                  #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .social {
-                    width: 30%;
-                    display: flex;
-                    align-items: space-around;
-                    justify-content: space-around;
-                    flex-direction: row;
-                    flex-wrap: nowrap; }
-                    #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .social a {
-                      color: #929292; }
-                      #wrapper #content #teams .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .social a:hover {
-                        color: #ffcc25; }
-            #wrapper #content #teams .team-slider .team-list .team-list-item .control-button {
-              position: absolute;
-              top: calc(50% - 5.4vw );
-              color: #929292;
-              cursor: pointer; }
-              #wrapper #content #teams .team-slider .team-list .team-list-item .control-button:hover {
-                color: #ffffff; }
-            #wrapper #content #teams .team-slider .team-list .team-list-item .control-button.prev-payer {
-              left: 0px; }
-            #wrapper #content #teams .team-slider .team-list .team-list-item .control-button.next-player {
-              right: 0px; }
     #wrapper #content #media {
       max-height: 730px;
       overflow: hidden;
