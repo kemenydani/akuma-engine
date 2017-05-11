@@ -9,6 +9,7 @@
 @import "component-form";
 @import "component-button";
 @import "component-icon";
+@import "component-comment";
 
 $margin-default: 15;
 
@@ -219,75 +220,6 @@ hr {
 			input {
 				min-width: 48%;
 				width: 48%;
-			}
-		}
-	}
-}
-
-.container.comment-container {
-
-	padding-top: 25px;
-	position: relative;
-	max-width: 100%;
-
-	.no-commenting {
-		text-align: center;
-		padding: 30px;
-	}
-
-	h1 {
-		text-align: center;
-	}
-
-	textarea {
-		min-width: 100%;
-		flex: 1;
-		width: 100%;
-		min-height: 100px;
-		border-radius: 4px;
-		margin-bottom: 15px;
-		border: 1px solid $color-grey;
-	}
-
-	.comment-form {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		align-items: center;
-	}
-
-	.comments {
-		max-width: 100%;
-		.comment {
-			margin-bottom: 30px;
-			display: flex;
-			max-width: calc(100% - 115px);
-			img {
-				max-width: 100px;
-				max-height: 100px;
-				border-radius: 90px;
-				margin-right: 15px;
-			}
-			.comment-text {
-				min-width: 100%;
-				width: 100%;
-				border-bottom: 1px solid $color-grey;
-
-				.poster-details {
-					margin-bottom: -7px;
-				}
-				.comment-poster {
-					font-size: 20px !important;
-					font-weight: bold;
-					margin-top: 0px;
-				}
-				p {
-					color: $color-grey;
-					padding-bottom: 7px;
-				}
-				.date {
-					float: right;
-				}
 			}
 		}
 	}

@@ -675,6 +675,55 @@ button, .button {
   .icon:hover {
     border: 1px solid #ffcc25; }
 
+.container.comment-container {
+  padding-top: 25px;
+  position: relative;
+  max-width: 100%; }
+  .container.comment-container .no-commenting {
+    text-align: center;
+    padding: 30px; }
+  .container.comment-container h1 {
+    text-align: center; }
+  .container.comment-container textarea {
+    min-width: 100%;
+    flex: 1;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #929292; }
+  .container.comment-container .comment-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+  .container.comment-container .comments {
+    max-width: 100%; }
+    .container.comment-container .comments .comment {
+      margin-bottom: 30px;
+      display: flex;
+      max-width: calc(100% - 115px); }
+      .container.comment-container .comments .comment img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 90px;
+        margin-right: 15px; }
+      .container.comment-container .comments .comment .comment-text {
+        min-width: 100%;
+        width: 100%;
+        border-bottom: 1px solid #929292; }
+        .container.comment-container .comments .comment .comment-text .poster-details {
+          margin-bottom: -7px; }
+        .container.comment-container .comments .comment .comment-text .comment-poster {
+          font-size: 20px !important;
+          font-weight: bold;
+          margin-top: 0px; }
+        .container.comment-container .comments .comment .comment-text p {
+          color: #929292;
+          padding-bottom: 7px; }
+        .container.comment-container .comments .comment .comment-text .date {
+          float: right; }
+
 html, body {
   height: 100%;
   padding: 0px;
@@ -870,55 +919,6 @@ hr {
       .login-area #login-form #login-form-inputs input {
         min-width: 48%;
         width: 48%; }
-
-.container.comment-container {
-  padding-top: 25px;
-  position: relative;
-  max-width: 100%; }
-  .container.comment-container .no-commenting {
-    text-align: center;
-    padding: 30px; }
-  .container.comment-container h1 {
-    text-align: center; }
-  .container.comment-container textarea {
-    min-width: 100%;
-    flex: 1;
-    width: 100%;
-    min-height: 100px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    border: 1px solid #929292; }
-  .container.comment-container .comment-form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center; }
-  .container.comment-container .comments {
-    max-width: 100%; }
-    .container.comment-container .comments .comment {
-      margin-bottom: 30px;
-      display: flex;
-      max-width: calc(100% - 115px); }
-      .container.comment-container .comments .comment img {
-        max-width: 100px;
-        max-height: 100px;
-        border-radius: 90px;
-        margin-right: 15px; }
-      .container.comment-container .comments .comment .comment-text {
-        min-width: 100%;
-        width: 100%;
-        border-bottom: 1px solid #929292; }
-        .container.comment-container .comments .comment .comment-text .poster-details {
-          margin-bottom: -7px; }
-        .container.comment-container .comments .comment .comment-text .comment-poster {
-          font-size: 20px !important;
-          font-weight: bold;
-          margin-top: 0px; }
-        .container.comment-container .comments .comment .comment-text p {
-          color: #929292;
-          padding-bottom: 7px; }
-        .container.comment-container .comments .comment .comment-text .date {
-          float: right; }
 
 .forum-list .forum-list-item {
   display: flex;
