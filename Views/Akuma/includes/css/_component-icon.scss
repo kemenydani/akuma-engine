@@ -1,0 +1,23 @@
+@import "colors";
+
+.icon {
+	margin: 0px 6px 0px 0px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border: 1px solid $color-grey;
+	color: $color-grey;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.icon-circular {
+	  	border-radius: 100%;
+	}
+	&:last-child {
+	  	margin-right: 0px;
+	}
+	&:hover {
+	  	border: 1px solid $color-brand;
+	}
+}

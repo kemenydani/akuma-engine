@@ -649,6 +649,24 @@ button, .button {
     button.button-dark:hover, .button.button-dark:hover {
       color: #ffcc25; }
 
+.icon {
+  margin: 0px 6px 0px 0px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #929292;
+  color: #929292;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .icon.icon-circular {
+    border-radius: 100%; }
+  .icon:last-child {
+    margin-right: 0px; }
+  .icon:hover {
+    border: 1px solid #ffcc25; }
+
 html, body {
   height: 100%;
   padding: 0px;
@@ -782,24 +800,6 @@ hr {
   margin-top: 15px;
   margin-bottom: 15px;
   border-top: 1px solid #929292 !important; }
-
-.icon {
-  margin: 0px 6px 0px 0px;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  border: 1px solid #929292;
-  color: #929292;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .icon.icon-circular {
-    border-radius: 100%; }
-  .icon:last-child {
-    margin-right: 0px; }
-  .icon:hover {
-    border: 1px solid #ffcc25; }
 
 .headline-rounded {
   border-radius: 60px;
