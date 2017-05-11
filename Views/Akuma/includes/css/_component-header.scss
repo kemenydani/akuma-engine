@@ -1,0 +1,100 @@
+@import "variables";
+@import "devices";
+
+#header {
+  background-color: $color-dark;
+  color: $color-light;
+  height: 90px;
+  min-height: 90px;
+  max-height: 90px;
+  display: flex;
+  justify-content: center;
+  > .container {
+	display: flex;
+	flex-direction: row;
+	.brand {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 0px;
+	  margin: 0px 60px 0px 0px;
+	  > img {
+		width: 140px;
+		max-width: 140px;
+		min-width: 140px;
+	  }
+	}
+  }
+  .nav-trigger {
+	/* critical styles - hide the checkbox input */
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	display: none;
+	@include device(phone){
+	  display: block;
+	}
+  }
+  label[for="nav-trigger"] {
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	/* non-critical apperance styles */
+	margin: 15px;
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	@include device(phone){
+	  visibility: visible;
+	  opacity: 1;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+  }
+  .nav-trigger:checked ~ .navigation {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0%);
+	transition-delay: 0s, 0s, 0.3s;
+  }
+  .navigation {
+	margin: 0px;
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 2;
+	font-family: $font-type-medium;
+	@include device(phone){
+	  position: absolute;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  width: 100%;
+	  z-index: 1;
+	  top: 90px;
+	  left: 0px;
+	  right: 0px;
+	  visibility: hidden;
+	  opacity: 0;
+	  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	  transform: translateY(-2em);
+	  > a {
+		border-bottom: 1px solid $color-grey;
+		padding: 10px 20px 10px 20px;
+		width: 100%;
+		background: $color-dark;
+	  }
+	}
+	> a {
+	  height: 100%;
+	  display: flex;
+	  align-items: center;
+	  color: $color-light;
+	  &:hover {
+		color: $color-brand;
+	  }
+	}
+  }
+}
