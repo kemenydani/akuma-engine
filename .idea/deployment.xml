@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="dev2_eu_webdevplace">
+    <serverData>
+      <paths name="dev2_eu_webdevplace">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/Uploads" />
+            <excludedPath path="/Uploads" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath path="/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/Views/Akuma/compile" />
+            <excludedPath path="/Views/Akuma/compile" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

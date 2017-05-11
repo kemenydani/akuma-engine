@@ -1,5 +1,5 @@
 *.sql
-
+/.idea/
 /Uploads/files/MODULES/Ad/
 /Uploads/files/MODULES/Advertisement/
 /Uploads/files/MODULES/Albums/
@@ -25,3 +25,5 @@
 /Uploads/thumbs/MODULES/Users/
 /Uploads/thumbs/MODULES/Videos/
 /index.php
+/Views/Akuma/compile/
+/Views/Akuma/cache/

@@ -1,0 +1,45 @@
+@import "colors";
+@import "devices";
+
+.module-team-slider {
+	position: relative;
+	overflow: hidden;
+	.control-button {
+		position: absolute;
+		top: 20px;
+		cursor: pointer;
+		color: $color-grey;
+		z-index: 2;
+		&.prev-team {
+		  	left: 30%;
+		}
+		&.next-team {
+		  	right: 30%;
+		}
+		&:hover {
+		  	color: $color-light;
+		}
+	}
+	.team-list {
+		max-width: 100%;
+		display: flex;
+		.team-list-item {
+			width: 100%;
+			min-width: 100%;
+			max-width: 100%;
+			overflow: hidden;
+			position: relative;
+			.team-game {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 20px;
+			  	//TODO: remove
+			  	background: yellow;
+			}
+		  	.players {
+			  	//TODO: remove
+			  	background: red;
+			}
+		}
+	}
+}
