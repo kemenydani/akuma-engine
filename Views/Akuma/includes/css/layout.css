@@ -724,6 +724,92 @@ button, .button {
         .container.comment-container .comments .comment .comment-text .date {
           float: right; }
 
+.forum-list .forum-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dfdfdf; }
+  .forum-list .forum-list-item:nth-child(odd) {
+    background: #f8f8f8; }
+  .forum-list .forum-list-item:nth-child(even) {
+    background: #fbfbfb; }
+  .forum-list .forum-list-item:last-child {
+    border-bottom: 0px; }
+  .forum-list .forum-list-item .last-poster {
+    line-height: 10px;
+    min-width: 25%;
+    overflow: hidden; }
+    .forum-list .forum-list-item .last-poster a {
+      font-weight: bold; }
+  .forum-list .forum-list-item .forum-title {
+    max-width: 50%; }
+    .forum-list .forum-list-item .forum-title h2 {
+      margin-top: 0px;
+      padding-bottom: 0px;
+      margin-bottom: 7.5px; }
+    .forum-list .forum-list-item .forum-title p {
+      margin: 0px;
+      line-height: 25px;
+      border-left: 5px solid #929292;
+      padding-left: 10px; }
+  .forum-list .forum-list-item .child-count {
+    text-align: center;
+    padding: 0px;
+    color: #929292; }
+    .forum-list .forum-list-item .child-count h1 {
+      padding: 0px;
+      margin: 0px; }
+    .forum-list .forum-list-item .child-count p {
+      padding: 0px;
+      font-size: 13px;
+      margin: 0px; }
+
+.partner-list-item {
+  background: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*
+      @else if $alias == desktop-lg {
+  	@media (min-width: 1101px)  { 
+  	    @content; 
+  	}
+      }
+  */
+  /*
+      @else if $alias == desktop-lg {
+  	@media (min-width: 1101px)  { 
+  	    @content; 
+  	}
+      }
+  */ }
+  @media (max-width: 768px) {
+    .partner-list-item {
+      align-items: center; } }
+  @media (min-width: 769px) and (max-width: 920px) {
+    .partner-list-item {
+      align-items: center; } }
+  .partner-list-item .partner-list-item-content img {
+    width: 250px;
+    float: right;
+    margin-left: 30px;
+    /*
+        @else if $alias == desktop-lg {
+    	@media (min-width: 1101px)  { 
+    	    @content; 
+    	}
+        }
+    */ }
+    @media (max-width: 768px) {
+      .partner-list-item .partner-list-item-content img {
+        margin-left: 0px;
+        margin-bottom: 30px; } }
+  .partner-list-item button {
+    margin-top: 30px; }
+
 html, body {
   height: 100%;
   padding: 0px;
@@ -919,49 +1005,6 @@ hr {
       .login-area #login-form #login-form-inputs input {
         min-width: 48%;
         width: 48%; }
-
-.forum-list .forum-list-item {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #dfdfdf; }
-  .forum-list .forum-list-item:nth-child(odd) {
-    background: #f8f8f8; }
-  .forum-list .forum-list-item:nth-child(even) {
-    background: #fbfbfb; }
-  .forum-list .forum-list-item:last-child {
-    border-bottom: 0px; }
-  .forum-list .forum-list-item .last-poster {
-    line-height: 10px;
-    min-width: 25%;
-    overflow: hidden; }
-    .forum-list .forum-list-item .last-poster a {
-      font-weight: bold; }
-  .forum-list .forum-list-item .forum-title {
-    max-width: 50%; }
-    .forum-list .forum-list-item .forum-title h2 {
-      margin-top: 0px;
-      padding-bottom: 0px;
-      margin-bottom: 7.5px; }
-    .forum-list .forum-list-item .forum-title p {
-      margin: 0px;
-      line-height: 25px;
-      border-left: 5px solid #929292;
-      padding-left: 10px; }
-  .forum-list .forum-list-item .child-count {
-    text-align: center;
-    padding: 0px;
-    color: #929292; }
-    .forum-list .forum-list-item .child-count h1 {
-      padding: 0px;
-      margin: 0px; }
-    .forum-list .forum-list-item .child-count p {
-      padding: 0px;
-      font-size: 13px;
-      margin: 0px; }
 
 .files-container .file-list {
   display: flex;

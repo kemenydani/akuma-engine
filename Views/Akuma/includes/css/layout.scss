@@ -11,6 +11,9 @@
 @import "component-icon";
 @import "component-comment";
 
+@import "module-forum";
+@import "module-partners";
+
 $margin-default: 15;
 
 $font-type-text: MS-Light;
@@ -220,73 +223,6 @@ hr {
 			input {
 				min-width: 48%;
 				width: 48%;
-			}
-		}
-	}
-}
-
-.forum-list {
-
-	.forum-list-item {
-		display: flex;
-		justify-content: space-between;
-		padding-top: 20px;
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-bottom: 15px;
-		border-bottom: 1px solid lighten($color-grey, 30%);
-
-		&:nth-child(odd){
-			background: lighten($color-grey, 40%);
-		}
-
-		&:nth-child(even){
-			background: lighten($color-grey, 41%);
-		}
-
-		&:last-child {
-			border-bottom: 0px;
-		}
-		.last-poster {
-			line-height: 10px;
-			//color: $color-grey;
-			min-width: 25%;
-			overflow: hidden;
-
-			a {
-				font-weight: bold;
-			}
-		}
-
-		.forum-title {
-			max-width: 50%;
-
-			h2 {
-				margin-top: 0px;
-				padding-bottom: 0px;
-				margin-bottom: 7.5px;
-			}
-			p {
-
-				margin: 0px;
-				line-height: 25px;
-				border-left: 5px solid $color-grey;
-				padding-left: 10px;
-				//color: $color-grey;
-			}
-		}
-		.child-count {
-			text-align: center;
-			padding: 0px;
-			color: $color-grey;
-			h1 {
-				padding: 0px;
-				margin: 0px;
-			}
-			p {
-				padding: 0px;
-				font-size: 13px;
-				margin: 0px;
 			}
 		}
 	}
