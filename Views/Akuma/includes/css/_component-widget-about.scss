@@ -1,0 +1,26 @@
+@import "colors";
+
+#about {
+	padding: 40px 0px 40px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $color-light;
+	> .container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+	p {
+		width: 100%;
+		color: $color-grey;
+		text-align: center;
+		padding: 20px 0px 20px 0px;
+	}
+	button {
+		align-self: center;
+		margin: 10px;
+	}
+}

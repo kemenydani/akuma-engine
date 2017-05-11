@@ -1716,6 +1716,27 @@ button, .button {
         #footer .info-bar > .container .copyright {
           justify-content: center; } }
 
+#about {
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff; }
+  #about > .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+  #about p {
+    width: 100%;
+    color: #929292;
+    text-align: center;
+    padding: 20px 0px 20px 0px; }
+  #about button {
+    align-self: center;
+    margin: 10px; }
+
 .forum-list .forum-list-item {
   display: flex;
   justify-content: space-between;
@@ -2075,113 +2096,6 @@ hr {
   bottom: 100%;
   left: 0;
   z-index: 1; }
-  #wrapper #header {
-    background-color: #0a0a0a;
-    color: #ffffff;
-    height: 90px;
-    min-height: 90px;
-    max-height: 90px;
-    display: flex;
-    justify-content: center; }
-    #wrapper #header > .container {
-      display: flex;
-      flex-direction: row; }
-      #wrapper #header > .container .brand {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-        margin: 0px 60px 0px 0px; }
-        #wrapper #header > .container .brand > img {
-          width: 140px;
-          max-width: 140px;
-          min-width: 140px; }
-  #wrapper .nav-trigger {
-    /* critical styles - hide the checkbox input */
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-    display: none;
-    /*
-        @else if $alias == desktop-lg {
-    	@media (min-width: 1101px)  { 
-    	    @content; 
-    	}
-        }
-    */ }
-    @media (max-width: 768px) {
-      #wrapper .nav-trigger {
-        display: block; } }
-  #wrapper label[for="nav-trigger"] {
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    /* non-critical apperance styles */
-    margin: 15px;
-    height: 60px;
-    width: 60px;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    /*
-        @else if $alias == desktop-lg {
-    	@media (min-width: 1101px)  { 
-    	    @content; 
-    	}
-        }
-    */ }
-    @media (max-width: 768px) {
-      #wrapper label[for="nav-trigger"] {
-        visibility: visible;
-        opacity: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center; } }
-  #wrapper .nav-trigger:checked ~ .navigation {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s; }
-  #wrapper .navigation {
-    margin: 0px;
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
-    font-family: MS-Medium;
-    /*
-        @else if $alias == desktop-lg {
-    	@media (min-width: 1101px)  { 
-    	    @content; 
-    	}
-        }
-    */ }
-    @media (max-width: 768px) {
-      #wrapper .navigation {
-        position: absolute;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 100%;
-        z-index: 1;
-        top: 90px;
-        left: 0px;
-        right: 0px;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-        transform: translateY(-2em); }
-        #wrapper .navigation > a {
-          border-bottom: 1px solid #929292;
-          padding: 10px 20px 10px 20px;
-          width: 100%;
-          background: #0a0a0a; } }
-    #wrapper .navigation > a {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      color: #ffffff; }
-      #wrapper .navigation > a:hover {
-        color: #ffcc25; }
   #wrapper .social-media {
     display: flex;
     align-items: center;
@@ -2231,25 +2145,5 @@ hr {
         color: #ffffff; }
       #wrapper #content.content-dark-themed p {
         color: #929292; }
-    #wrapper #content #about {
-      padding: 40px 0px 40px 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #ffffff; }
-      #wrapper #content #about > .container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center; }
-      #wrapper #content #about p {
-        width: 100%;
-        color: #929292;
-        text-align: center;
-        padding: 20px 0px 20px 0px; }
-      #wrapper #content #about button {
-        align-self: center;
-        margin: 10px; }
 
 /*# sourceMappingURL=layout.css.map */
