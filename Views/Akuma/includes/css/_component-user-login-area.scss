@@ -1,0 +1,42 @@
+@import "colors";
+
+.container.user-logged {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	height: 44px;
+	line-height: 44px;
+	> * {
+	  margin-right: 10px;
+	}
+}
+
+.login-area {
+	padding: 25px 0px 25px 0px;
+	border-bottom: 1px solid $color-grey;
+	.create-thread {
+		position: absolute;
+		right: -4px;
+	}
+	p {
+		padding: 0px;
+		margin-bottom: 15px;
+	}
+	.error_messages {
+		padding-top: 0px;
+		margin-top: 7.5px;
+		padding-left: 20px;
+		color: #d43f3a;
+		line-height: 24px;
+	}
+	#login-form {
+	  	display: flex;
+		#login-form-inputs {
+		  flex: 1;
+		  input {
+			  min-width: 48%;
+			  width: 48%;
+		  }
+		}
+	}
+}
