@@ -117,7 +117,7 @@ class Teams {
 	        $stmt = $db->prepare("SELECT * FROM ".DBPREFIX."_members m WHERE m.team_id = {$team['team_id']} AND m.active = 1");
 	        $stmt->execute();
 	        $members = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-	        $items[$key]['teams'] = $members === false ? [] : $members;
+	        $items[$key]['members'] = $members === false ? [] : $members;
         }
         
         /*
