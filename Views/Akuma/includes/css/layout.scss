@@ -13,11 +13,12 @@
 @import "component-news-slider";
 @import "component-article-slider";
 @import "component-user-login-area";
-@import "component-widget-teams";
-@import "component-widget-media";
-@import "component-widget-news";
-@import "component-footer";
-@import "component-widget-about";
+@import "section-widget-teams";
+@import "section-widget-media";
+@import "section-widget-news";
+@import "section-footer";
+@import "section-widget-about";
+@import "section-header";
 
 @import "module-forum";
 @import "module-partner";
@@ -168,6 +169,7 @@ hr {
 ::-moz-selection {
     background: $color-brand; /* Gecko Browsers */
 }
+
 #wrapper {
     min-height: 100%;
     display: flex;
