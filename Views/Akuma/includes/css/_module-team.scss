@@ -30,15 +30,36 @@
 			overflow: hidden;
 			position: relative;
 			.team-game {
-				display: flex;
 				justify-content: center;
 				margin-bottom: 20px;
-			  	//TODO: remove
 			  	background: yellow;
+			  	position: relative;
+			  	max-height: 250px;
+			  	overflow: hidden;
+			  	img {
+					min-width:100%;
+					object-fit: cover;
+				}
 			}
 		  	.players {
-			  	//TODO: remove
-			  	background: red;
+			
+			  	.player-list {
+				  	border: 1px solid blue;
+					-webkit-column-count: 3; /* Chrome, Safari, Opera */
+					-moz-column-count: 3; /* Firefox */
+					column-count: 3;
+				  	column-gap: 0;
+					.player-list-item {
+						display: inline-block;
+						border: 1px solid green;
+						width: 100%;
+						min-width: 100%;
+						height: 300px;
+						& > * {
+							  display: none;
+						}
+					}
+				}
 			}
 		}
 	}
