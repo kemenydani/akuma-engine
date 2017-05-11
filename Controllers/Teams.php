@@ -97,24 +97,27 @@ class Teams {
     
     public function all(){
         global $db, $Smarty;
-   
+        
+        /*
         $total = $db->query("SELECT COUNT(*) as rows FROM ".DBPREFIX."_".$this->table." WHERE active = 1 AND type = 'game'")->fetch(\PDO::FETCH_OBJ);
         $pages = \ceil($total->rows / $this->perpage);
         
         $current = isset($this->params[0]) ? $this->params[0] : 1;
         $range  = $this->perpage * ($current - 1);
-
-        $stmt = $db->prepare("SELECT * FROM ".DBPREFIX."_teams WHERE active = 1 AND type = 'game' ORDER BY team_id DESC LIMIT :limit, :perpage");
+		*/
+        $stmt = $db->prepare("SELECT * FROM ".DBPREFIX."_teams t WHERE t.active = 1 AND t.type = 'game' ORDER BY t.team_id DESC");
+        /*
         $stmt->bindParam(':limit', $range, \PDO::PARAM_INT);
         $stmt->bindParam(':perpage', $this->perpage, \PDO::PARAM_INT);
-        
+        */
         $stmt->execute();
         $items = $stmt->fetchAll(\PDO::FETCH_ASSOC);
         
-        
+        /*
         $Smarty->assign('total', $total->rows);
         $Smarty->assign('pages', $pages);
         $Smarty->assign('current', $current);
+        */
         $Smarty->assign('items', $this->order($items));
         $Smarty->display('Teams/_all.tpl');
 
