@@ -1,0 +1,26 @@
+@import "colors";
+
+.pagination {
+	list-style-type: none;
+	display: flex;
+	padding: 0px;
+	li {
+		display: block;
+		border: 1px solid $color-grey;
+		padding-left: 12px;
+		padding-right: 12px;
+		margin-left: 5px;
+		margin-right: 5px;
+		a {
+			color: $color-grey;
+		}
+		&.active {
+			a {
+			  color: $color-dark;
+			}
+		}
+		&.disabled {
+			//TODO: styling necessary here
+		}
+	}
+}
