@@ -560,6 +560,95 @@ template {
     .pagination li.active a {
       color: #0a0a0a; }
 
+form {
+  overflow: visible;
+  margin: 0px !important;
+  padding: 0px !important; }
+  form select {
+    display: block; }
+    form select option, form select option:first-child {
+      color: #929292 !important; }
+  form textarea {
+    resize: vertical; }
+    form textarea.small {
+      height: 100px; }
+    form textarea.medium {
+      height: 200px; }
+    form textarea.big {
+      height: 300px; }
+  form .field {
+    padding-bottom: 15px; }
+    form .field ul {
+      padding-top: 0px;
+      margin-top: 7.5px;
+      padding-left: 20px;
+      color: #d43f3a;
+      line-height: 24px; }
+  form input, form input:not([type="submit"]), form select, form textarea {
+    color: #929292 !important;
+    border: 1px solid #929292;
+    padding: 7.5px 7.5px 7.5px 7.5px !important;
+    -webkit-box-shadow: inset 0px -10px 13px -9px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0px -10px 13px -9px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0px -10px 13px -9px rgba(0, 0, 0, 0.05); }
+    form input:focus, form input:not([type="submit"]):focus, form select:focus, form textarea:focus {
+      outline: 0;
+      border: 1px solid #0a0a0a; }
+    form input::-webkit-input-placeholder, form input:not([type="submit"])::-webkit-input-placeholder, form select::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+      color: #929292; }
+    form input:-moz-placeholder, form input:not([type="submit"]):-moz-placeholder, form select:-moz-placeholder, form textarea:-moz-placeholder {
+      /* Firefox 18- */
+      color: #929292; }
+    form input:-moz-placeholder, form input:not([type="submit"]):-moz-placeholder, form select:-moz-placeholder, form textarea:-moz-placeholder {
+      /* Firefox 19+ */
+      color: #929292; }
+    form input:-ms-input-placeholder, form input:not([type="submit"]):-ms-input-placeholder, form select:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+      color: #929292; }
+
+button, .button {
+  border: 0px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently */ }
+  button:hover, .button:hover {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
+  button.button-big, .button.button-big {
+    padding: 15px 30px 15px 30px; }
+  button.button-medium, .button.button-medium {
+    padding: 10px 25px 10px 25px; }
+  button.button-rounded, .button.button-rounded {
+    border-radius: 90px; }
+  button.button-brand, .button.button-brand {
+    background-color: #ffcc25; }
+    button.button-brand:hover, .button.button-brand:hover {
+      color: #ffffff; }
+  button.button-brand-border, .button.button-brand-border {
+    border: 3px solid #ffcc25;
+    color: #ffffff;
+    background: none; }
+    button.button-brand-border:hover, .button.button-brand-border:hover {
+      color: #ffcc25;
+      border-color: #929292; }
+  button.button-dark, .button.button-dark {
+    background-color: #0a0a0a;
+    color: #ffffff; }
+    button.button-dark:hover, .button.button-dark:hover {
+      color: #ffcc25; }
+
 html, body {
   height: 100%;
   padding: 0px;
@@ -687,7 +776,6 @@ a:active {
       width: 1100px !important;
       max-width: 1100px !important; } }
 
-/* FORM */
 hr {
   border: 0;
   height: 0;
@@ -695,52 +783,6 @@ hr {
   margin-bottom: 15px;
   border-top: 1px solid #929292 !important; }
 
-form {
-  overflow: visible;
-  margin: 0px !important;
-  padding: 0px !important; }
-  form select {
-    display: block; }
-    form select option, form select option:first-child {
-      color: #929292 !important; }
-  form textarea {
-    resize: vertical; }
-    form textarea.small {
-      height: 100px; }
-    form textarea.medium {
-      height: 200px; }
-    form textarea.big {
-      height: 300px; }
-  form .field {
-    padding-bottom: 15px; }
-    form .field ul {
-      padding-top: 0px;
-      margin-top: 7.5px;
-      padding-left: 20px;
-      color: #d43f3a;
-      line-height: 24px; }
-  form input, form input:not([type="submit"]), form select, form textarea {
-    color: #929292 !important;
-    border: 1px solid #929292;
-    padding: 7.5px 7.5px 7.5px 7.5px !important;
-    -webkit-box-shadow: inset 0px -10px 13px -9px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: inset 0px -10px 13px -9px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0px -10px 13px -9px rgba(0, 0, 0, 0.05); }
-    form input:focus, form input:not([type="submit"]):focus, form select:focus, form textarea:focus {
-      outline: 0;
-      border: 1px solid #0a0a0a; }
-    form input::-webkit-input-placeholder, form input:not([type="submit"])::-webkit-input-placeholder, form select::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
-      color: #929292; }
-    form input:-moz-placeholder, form input:not([type="submit"]):-moz-placeholder, form select:-moz-placeholder, form textarea:-moz-placeholder {
-      /* Firefox 18- */
-      color: #929292; }
-    form input:-moz-placeholder, form input:not([type="submit"]):-moz-placeholder, form select:-moz-placeholder, form textarea:-moz-placeholder {
-      /* Firefox 19+ */
-      color: #929292; }
-    form input:-ms-input-placeholder, form input:not([type="submit"]):-ms-input-placeholder, form select:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-      color: #929292; }
-
-/* FORM-END */
 .icon {
   margin: 0px 6px 0px 0px;
   width: 28px;
@@ -788,51 +830,6 @@ form {
 ::-moz-selection {
   background: #ffcc25;
   /* Gecko Browsers */ }
-
-button, .button {
-  border: 0px;
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently */ }
-  button:hover, .button:hover {
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    /* ...and now for the proper property */
-    transition: .5s; }
-  button.button-big, .button.button-big {
-    padding: 15px 30px 15px 30px; }
-  button.button-medium, .button.button-medium {
-    padding: 10px 25px 10px 25px; }
-  button.button-rounded, .button.button-rounded {
-    border-radius: 90px; }
-  button.button-brand, .button.button-brand {
-    background-color: #ffcc25; }
-    button.button-brand:hover, .button.button-brand:hover {
-      color: #ffffff; }
-  button.button-brand-border, .button.button-brand-border {
-    border: 3px solid #ffcc25;
-    color: #ffffff;
-    background: none; }
-    button.button-brand-border:hover, .button.button-brand-border:hover {
-      color: #ffcc25;
-      border-color: #929292; }
-  button.button-dark, .button.button-dark {
-    background-color: #0a0a0a;
-    color: #ffffff; }
-    button.button-dark:hover, .button.button-dark:hover {
-      color: #ffcc25; }
 
 .container.pagination-container {
   display: flex;

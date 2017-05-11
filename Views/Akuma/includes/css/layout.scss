@@ -6,6 +6,8 @@
 @import "colors";
 
 @import "component-pagination";
+@import "component-form";
+@import "component-button";
 
 $margin-default: 15;
 
@@ -132,8 +134,6 @@ a:active {
     
 }
 
-/* FORM */
-
 hr {
 	border: 0;
 	height: 0;
@@ -141,67 +141,6 @@ hr {
 	margin-bottom: 15px;
 	border-top: 1px solid $color-grey !important;
 }
-
-form {
-	overflow: visible;
-	margin: 0px !important;
-	padding: 0px !important;
-	select {
-		display: block;
-		option,  option:first-child {
-			color: $color-grey !important;
-		}
-	}
-	textarea {
-		resize:vertical;
-		&.small {
-			height: 100px;
-		}
-		&.medium {
-			height: 200px;
-		}
-		&.big {
-			height: 300px
-		}
-	}
-	.field {
-		padding-bottom: 15px;
-		ul {
-			padding-top: 0px;
-			margin-top: 7.5px;
-			padding-left: 20px;
-			color: #d43f3a;
-			line-height: 24px;
-		}
-	}
-	input, input:not([type="submit"]), select, textarea {
-		color: $color-grey !important;
-		border: 1px solid $color-grey;
-		padding: 7.5px 7.5px 7.5px 7.5px !important;
-		&:focus {
-			outline: 0;
-			border: 1px solid $color-dark;
-		}
-		&::-webkit-input-placeholder {
-			color: $color-grey;
-		}
-		&:-moz-placeholder { /* Firefox 18- */
-			color: $color-grey;
-		}
-		&:-moz-placeholder {  /* Firefox 19+ */
-			color: $color-grey
-		}
-		&:-ms-input-placeholder {
-			color: $color-grey;
-		}
-		-webkit-box-shadow: inset 0px -10px 13px -9px rgba(0,0,0, 0.05);
-		-moz-box-shadow: inset 0px -10px 13px -9px rgba(0,0,0, 0.05);
-		box-shadow: inset 0px -10px 13px -9px rgba(0,0,0, 0.05);
-	}
-}
-
-/* FORM-END */
-
 
 .icon {
     margin: 0px 6px 0px 0px;
@@ -254,70 +193,6 @@ form {
 
 ::-moz-selection {
     background: $color-brand; /* Gecko Browsers */
-}
-
-button, .button {
-    border: 0px;
-    cursor: pointer;
-      -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently */
-    
-    &:hover {
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	/* ...and now for the proper property */
-	transition:.5s;
-    }
-    
-    &.button-big {
-	padding: 15px 30px 15px 30px;
-	//font-size: 18px;
-    }
-    
-    &.button-medium {
-	padding: 10px 25px 10px 25px;
-	//font-size: 16px;
-    }
-    
-    &.button-rounded {
-	border-radius: 90px;
-    }
-  
-	&.button-brand {
-	  background-color: $color-brand;
-	  
-	  &:hover {
-		color: $color-light;
-	  }
-	}
-  
-    &.button-brand-border {
-	border: 3px solid $color-brand;
-	color: $color-light;
-	background: none;
-	
-	&:hover {
-	    color: $color-brand;
-	    border-color: $color-grey;
-	}
-	
-    }
-    
-    &.button-dark {
-	background-color: $color-dark;
-	color: $color-light;
-	
-	&:hover {
-	    color: $color-brand;
-	}
-    }
-    
 }
 
 .container.pagination-container {

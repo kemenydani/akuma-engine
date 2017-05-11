@@ -1,0 +1,51 @@
+@import "_colors.scss";
+
+button, .button {
+	border: 0px;
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently */
+	&:hover {
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+	}
+	&.button-big {
+		padding: 15px 30px 15px 30px;
+	}
+	&.button-medium {
+		padding: 10px 25px 10px 25px;
+	}
+	&.button-rounded {
+	  	border-radius: 90px;
+	}
+	&.button-brand {
+	  	background-color: $color-brand;
+		&:hover {
+		  	color: $color-light;
+		}
+	}
+	&.button-brand-border {
+		border: 3px solid $color-brand;
+		color: $color-light;
+		background: none;
+		&:hover {
+		  color: $color-brand;
+		  border-color: $color-grey;
+		}
+	}
+	&.button-dark {
+		background-color: $color-dark;
+		color: $color-light;
+		
+		&:hover {
+		  	color: $color-brand;
+		}
+	}
+}
