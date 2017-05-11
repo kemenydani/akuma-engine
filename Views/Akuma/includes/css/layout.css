@@ -1320,8 +1320,8 @@ button, .button {
       overflow: hidden;
       display: flex;
       justify-content: center;
-      background-image: url("../images/bg-widget-news.jpg");
       width: 100%;
+      position: relative;
       /*
           @else if $alias == desktop-lg {
       	@media (min-width: 1101px)  { 
@@ -1343,6 +1343,16 @@ button, .button {
       	}
           }
       */ }
+      #wrapper #content #news::after {
+        content: "";
+        background-image: url("../images/bg-widget-news.jpg");
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1; }
       @media (max-width: 768px) {
         #wrapper #content #news {
           display: none;
