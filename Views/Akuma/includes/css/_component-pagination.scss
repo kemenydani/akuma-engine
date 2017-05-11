@@ -1,5 +1,14 @@
 @import "colors";
 
+.container.pagination-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
 .pagination {
 	list-style-type: none;
 	display: flex;

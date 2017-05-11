@@ -544,6 +544,14 @@ template {
     margin-left: 15px;
     margin-top: 15px; }
 
+.container.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
 .pagination {
   list-style-type: none;
   display: flex;
@@ -830,14 +838,6 @@ hr {
 ::-moz-selection {
   background: #ffcc25;
   /* Gecko Browsers */ }
-
-.container.pagination-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding-bottom: 15px;
-  padding-top: 15px; }
 
 .container.user-logged {
   display: flex;
