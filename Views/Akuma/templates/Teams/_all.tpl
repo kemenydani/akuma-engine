@@ -14,7 +14,6 @@
 </script>
 <section id="content">
 	<br>
-	<h1 class="heading">TEAMS</h1>
 	<div class="container">
 	{if $teams}
 
