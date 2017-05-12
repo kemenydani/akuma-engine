@@ -13,8 +13,7 @@
 	});
 </script>
 <section id="content">
-	<br>
-	<div class="container">
+	<div class="container-fluid">
 	{if $teams}
 
 		<div class="module-team-slider">
@@ -27,21 +26,21 @@
 			</div>
 			<!-- Team list container -->
 			<div class="team-list">
+
 				<!-- Loop teams -->
                 {foreach $teams as $team}
 					<!-- Query database for members in this team -->
-                    {assign var="members" value=$Member->find(["active = 1", "team_id = `$team.team_id`"])}
 					<!-- Check if there are teams -->
-                    {if count($members)}
+                    {if count($team.members)}
 						<!-- One team list item -->
 						<div class="team-list-item">
 							<div class="team-game">
-								<img src="{$base}Uploads/files/{$team.team_image}">
+								<img onerror="imgError(this)" src="{$base}Uploads/files/{$team.team_image}">
 							</div>
-							<div class="players">
+							<div class="players container">
 								<!-- Player list container -->
 								<div class="player-list">
-                                    {foreach $members as $member}
+                                    {foreach $team.members as $member}
 										<!-- One palyer list item -->
 										<div class="player-list-item">
 											<div class="avatar">
@@ -52,16 +51,19 @@
                                                 {/if}
 											</div>
 											<p>{$member.about|truncate:280}</p>
-											<br>
-											<a href="{$base}user/profile/{$member.user_id}/">
-												<button type="button" class="button button-brand-border button-medium button-rounded">READ MORE</button>
-											</a>
-											<br>
-											<div class="social">
-												<a href="{$member.facebook}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-												<a href="{$member.twitter}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-												<a href="{$member.youtube}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-											</div>
+                                            {*
+                                            <br>
+
+                                            <a href="{$base}user/profile/{$member.user_id}/">
+                                                <button type="button" class="button button-brand-border button-medium button-rounded">READ MORE</button>
+                                            </a>
+                                            <br>
+                                            <div class="social">
+                                                <a href="{$member.facebook}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                <a href="{$member.twitter}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                <a href="{$member.youtube}"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                            </div>
+                                            *}
 										</div> <!-- .player-list-item -->
                                     {/foreach} <!-- foreach members -->
 								</div> <!-- .player-list -->
@@ -70,7 +72,6 @@
                     {/if} <!-- if members count -->
                 {/foreach} <!-- foreach teams -->
 			</div> <!-- .team-list -->
-
 		</div> <!-- .team-slider -->
 
 	{else}
