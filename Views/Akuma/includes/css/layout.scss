@@ -113,29 +113,29 @@ a:active {
 	}
   
     @include device(phone){
-	width: 100% !important;
-	max-width: 100% !important;
-	padding: 0px 20px 0px 20px;
-	//overflow: hidden;
+		width: 100% !important;
+		max-width: 100% !important;
+		padding: 0px 20px 0px 20px;
+		//overflow: hidden;
     }
     
     @include device(tablet){
-	width: 100% !important;
-	max-width: 100% !important;
-	padding: 0px 20px 0px 20px;
-	overflow: hidden;
+		width: 100% !important;
+		max-width: 100% !important;
+		padding: 0px 20px 0px 20px;
+		overflow: hidden;
     }
     
     @include device(desktop-sm){
-	width: 100% !important;
-	max-width: 100% !important;
-	padding: 0px 20px 0px 20px;
-	overflow: hidden;
+		width: 100% !important;
+		max-width: 100% !important;
+		padding: 0px 20px 0px 20px;
+		overflow: hidden;
     }
 
     @include device(desktop){
-	width: 1100px !important;
-	max-width: 1100px !important;
+		width: 1100px !important;
+		max-width: 1100px !important;
     }
     
 }

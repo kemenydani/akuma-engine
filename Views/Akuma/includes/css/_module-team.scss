@@ -4,17 +4,23 @@
 .module-team-slider {
 	position: relative;
 	overflow: hidden;
+	//border: 5px solid yellow;
+	.arrow-holder {
+		margin: 0px auto;
+		background: red;
+		overflow: visible;
+	}
 	.control-button {
 		position: absolute;
-		top: 20px;
+		top: 150px;
 		cursor: pointer;
 		color: $color-grey;
 		z-index: 2;
 		&.prev-team {
-		  	left: 30%;
+		  	left: 20px;
 		}
 		&.next-team {
-		  	right: 30%;
+		  	right: 20px;
 		}
 		&:hover {
 		  	color: $color-light;
@@ -23,14 +29,16 @@
 	.team-list {
 		max-width: 100%;
 		display: flex;
-		//border: 1px solid purple;
-
+		//border: 5px solid purple;
+		//TODO: this is just a hotfix (margin-bottom)
+		margin-bottom: -300px;
 		.team-list-item {
 			width: 100%;
 			min-width: 100%;
 			max-width: 100%;
 			overflow: hidden;
 			position: relative;
+			//border: 5px solid green;
 			.team-game {
 				justify-content: center;
 			  	//background: yellow;
@@ -41,47 +49,82 @@
 				margin-bottom: 20px;
 			  	img {
 					min-width:100%;
+					max-width: 100%;
 					object-fit: cover;
 				}
 			}
 		  	.players {
 				margin: 0px auto;
 				//margin-top: -40px;
+				//border: 5px solid blue;
 				background-color: white;
 			  	.player-list {
+					//border: 5px solid red;
 					.player-list-item {
+						//border: 1px solid red;
+						//border: 5px solid orange;
 						width: 100%;
-						//display: flex;
-						//flex-direction: column;
+						display: flex;
 						overflow: hidden;
-						padding-bottom: 20px;
-
+						margin-bottom: 20px;
+						max-height: 300px;
 						.avatar {
 							width: 300px;
 							height: 300px;
+							min-width: 300px;
+							min-height: 300px;
 							overflow: hidden;
 							> img {
 								height: 100%;
 								object-fit: cover;
 							}
 						}
-						p {
-							color: $color-grey;
+						.player-info {
+							color: $color-dark;
+							background: lighten($color-grey, 37);
 							text-align: justify;
-							padding: 0px 28px 0px 28px;
 							flex: 1;
-						}
-						.social {
-							width: 30%;
-							display: flex;
-							justify-content: space-around;
-							flex-direction: row;
-							flex-wrap: nowrap;
-							a {
-								color: $color-grey;
-								&:hover {
-									color: $color-brand;
+							padding: 20px;
+							margin: 0px;
+							border: 1px solid lighten($color-grey, 30);
+							border-left: 0px;
+							position: relative;
+							.social {
+								display: flex;
+								justify-content: space-around;
+								flex-direction: row;
+								flex-wrap: nowrap;
+								position: absolute;
+								bottom: 20px;
+								right: 20px;
+								a {
+									margin-left: 20px;
+									color: $color-grey;
+									&:hover {
+										color: $color-brand;
+									}
 								}
+							}
+							h1 {
+								margin-top: 0px;
+								text-transform: uppercase;
+							}
+							p {
+								padding: 0px;
+								margin: 0px;
+
+								@include device(phone){
+									background: red;
+									max-height: 165px;
+									overflow: hidden;
+								}
+
+								@include device(tablet){
+									background: green;
+									max-height: 165px;
+									overflow: hidden;
+								}
+
 							}
 						}
 					}

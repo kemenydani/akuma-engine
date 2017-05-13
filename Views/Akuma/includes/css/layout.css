@@ -2101,21 +2101,26 @@ button, .button {
 .module-team-slider {
   position: relative;
   overflow: hidden; }
+  .module-team-slider .arrow-holder {
+    margin: 0px auto;
+    background: red;
+    overflow: visible; }
   .module-team-slider .control-button {
     position: absolute;
-    top: 20px;
+    top: 150px;
     cursor: pointer;
     color: #929292;
     z-index: 2; }
     .module-team-slider .control-button.prev-team {
-      left: 30%; }
+      left: 20px; }
     .module-team-slider .control-button.next-team {
-      right: 30%; }
+      right: 20px; }
     .module-team-slider .control-button:hover {
       color: #ffffff; }
   .module-team-slider .team-list {
     max-width: 100%;
-    display: flex; }
+    display: flex;
+    margin-bottom: -300px; }
     .module-team-slider .team-list .team-list-item {
       width: 100%;
       min-width: 100%;
@@ -2131,36 +2136,79 @@ button, .button {
         margin-bottom: 20px; }
         .module-team-slider .team-list .team-list-item .team-game img {
           min-width: 100%;
+          max-width: 100%;
           object-fit: cover; }
       .module-team-slider .team-list .team-list-item .players {
         margin: 0px auto;
         background-color: white; }
         .module-team-slider .team-list .team-list-item .players .player-list .player-list-item {
           width: 100%;
+          display: flex;
           overflow: hidden;
-          padding-bottom: 20px; }
+          margin-bottom: 20px;
+          max-height: 300px; }
           .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .avatar {
             width: 300px;
             height: 300px;
+            min-width: 300px;
+            min-height: 300px;
             overflow: hidden; }
             .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .avatar > img {
               height: 100%;
               object-fit: cover; }
-          .module-team-slider .team-list .team-list-item .players .player-list .player-list-item p {
-            color: #929292;
+          .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info {
+            color: #0a0a0a;
+            background: #f0f0f0;
             text-align: justify;
-            padding: 0px 28px 0px 28px;
-            flex: 1; }
-          .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .social {
-            width: 30%;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            flex-wrap: nowrap; }
-            .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .social a {
-              color: #929292; }
-              .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .social a:hover {
-                color: #ffcc25; }
+            flex: 1;
+            padding: 20px;
+            margin: 0px;
+            border: 1px solid #dfdfdf;
+            border-left: 0px;
+            position: relative; }
+            .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info .social {
+              display: flex;
+              justify-content: space-around;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              position: absolute;
+              bottom: 20px;
+              right: 20px; }
+              .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info .social a {
+                margin-left: 20px;
+                color: #929292; }
+                .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info .social a:hover {
+                  color: #ffcc25; }
+            .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info h1 {
+              margin-top: 0px;
+              text-transform: uppercase; }
+            .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info p {
+              padding: 0px;
+              margin: 0px;
+              /*
+                  @else if $alias == desktop-lg {
+              	@media (min-width: 1101px)  { 
+              	    @content; 
+              	}
+                  }
+              */
+              /*
+                  @else if $alias == desktop-lg {
+              	@media (min-width: 1101px)  { 
+              	    @content; 
+              	}
+                  }
+              */ }
+              @media (max-width: 768px) {
+                .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info p {
+                  background: red;
+                  max-height: 165px;
+                  overflow: hidden; } }
+              @media (min-width: 769px) and (max-width: 920px) {
+                .module-team-slider .team-list .team-list-item .players .player-list .player-list-item .player-info p {
+                  background: green;
+                  max-height: 165px;
+                  overflow: hidden; } }
 
 html, body {
   height: 100%;
