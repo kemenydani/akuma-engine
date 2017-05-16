@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="dev2_eu_webdevplace">
     <serverData>
+      <paths name="Shared Root">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="dev2_eu_webdevplace">
         <serverdata>
           <mappings>

@@ -10,6 +10,9 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="fbe22c3b-bb87-4f91-b451-85184df516ee" name="Shared Root" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="F:\PST_akuma_170512" accessType="MOUNT" />
+      </webServer>
     </option>
   </component>
 </project>
