@@ -5,9 +5,8 @@
 	<div class="container">
 	    
 	    <div class="navigation">
-		<a href="{$base}">HOME</a>
 		<a href="{$base}about">ABOUT</a>
-		<a href="{$base}teams">TEAM</a>
+		<a href="{$base}teams">SQUADS</a>
 		<a href="{$base}partners">PARTNERS</a>
 		<a href="{$base}downloads">DOWNLOADS</a>
 		<a href="{$base}forum">BOARD</a>

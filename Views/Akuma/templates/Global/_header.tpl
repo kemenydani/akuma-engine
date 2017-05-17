@@ -14,11 +14,11 @@
 
 	<div class="navigation">
 	    <a href="{$base}">HOME</a>
-	    <a href="{$base}about">ABOUT</a>
-	    <a href="{$base}teams">TEAM</a>
-	    <a href="{$base}partners">PARTNERS</a>
-	    <a href="{$base}downloads">DOWNLOADS</a>
-	    <a href="{$base}forum">BOARD</a>
+	    <a href="">ABOUT</a>
+	    <a href="">NEWS</a>
+	    <a href="">ARTICLES</a>
+	    <a href="">TEAMS</a>
+	    <a href="">MEDIA</a>
 	</div> <!-- .navigation end -->
 
 	<div class="social-media">
