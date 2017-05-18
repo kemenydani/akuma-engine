@@ -8,6 +8,7 @@
 	max-height: 960px;
 	overflow: hidden;
 	position: relative;
+  	margin-top: 90px;
 	@include aspect-ratio(1920, 960);
 	@include device(phone){
 	  	display: none;

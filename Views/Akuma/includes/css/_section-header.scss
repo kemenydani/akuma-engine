@@ -9,6 +9,9 @@
   max-height: 90px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   > .container {
 	display: flex;
 	flex-direction: row;

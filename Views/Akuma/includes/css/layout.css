@@ -796,6 +796,7 @@ button, .button {
   max-height: 960px;
   overflow: hidden;
   position: relative;
+  margin-top: 90px;
   position: relative;
   /*
       @else if $alias == desktop-lg {
@@ -1811,7 +1812,10 @@ button, .button {
   min-height: 90px;
   max-height: 90px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%; }
   #header > .container {
     display: flex;
     flex-direction: row; }
