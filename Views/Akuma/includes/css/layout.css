@@ -2034,6 +2034,7 @@ label[for="nav-trigger"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #929292;
   /*
       @else if $alias == desktop-lg {
   	@media (min-width: 1101px)  { 
