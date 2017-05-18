@@ -2,7 +2,7 @@
 
 {block name=content}
 
-    <section id="content" class="content-dark-themed">
+    <section id="content" class="">
 
         <div class="container">
 
