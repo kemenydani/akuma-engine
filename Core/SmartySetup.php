@@ -24,7 +24,7 @@ class SmartySetup extends \Smarty {
         $this->assign("user", $user);
 
         $arr = \explode('/', \rtrim(self::$url, '/'));
-
+	    $arr[0] = $arr[0] !== "" ? $arr[0] : "home";
         $this->assign("location_array", $arr);
         $this->assign("method_url", $arr[0] . '/' . $arr[1] . '/');
         $this->assign("controller", $arr[0]);

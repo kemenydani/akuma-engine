@@ -13,12 +13,22 @@
 	</label>
 
 	<div id="scrollnav" class="navigation">
-	    <a href="{$base}">HOME</a>
-	    <a href="#about">ABOUT</a>
-	    <a href="#news">NEWS</a>
-	    <a href="#articles">ARTICLES</a>
-	    <a href="#teams">TEAMS</a>
-	    <a href="#media">MEDIA</a>
+		{if $controller === "home"}
+			<a href="{$base}">HOME</a>
+			<a href="#about">ABOUT</a>
+			<a href="#news">NEWS</a>
+			<a href="#articles">ARTICLES</a>
+			<a href="#teams">TEAMS</a>
+			<a href="#media">MEDIA</a>
+		{else}
+			<a href="{$base}">HOME</a>
+			<a href="{$base}about">ABOUT</a>
+			<a href="{$base}news">NEWS</a>
+			<a href="{$base}teams">TEAMS</a>
+			<a href="{$base}partners">PARTNERS</a>
+			<a href="{$base}downloads">DOWNLOADS</a>
+			<a href="{$base}forum">BOARD</a>
+		{/if}
 	</div> <!-- .navigation end -->
 
 	<div class="social-media">
