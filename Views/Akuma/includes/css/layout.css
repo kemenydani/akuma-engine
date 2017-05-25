@@ -1106,7 +1106,11 @@ button, .button {
               position: relative;
               -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
               clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-              overflow: hidden; }
+              overflow: hidden;
+              display: flex;
+              align-content: center;
+              align-items: center;
+              justify-content: center; }
               .team-slider .team-list .team-list-item .player-slider .player-list .player-list-item .avatar > img {
                 height: 100%;
                 object-fit: cover; }
