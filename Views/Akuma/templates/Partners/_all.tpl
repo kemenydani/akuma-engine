@@ -7,15 +7,13 @@
         <div class="container">
 
         <br>
-
         <h1 class="heading">SPONSORS</h1>
-
         <br>
 
         {if $sponsors}
 
             {foreach $sponsors as $sponsor}
-            <div class="container panel panel-dark margin-bottom-2x partner-list-item" style="position: relative;>">
+            <div class="container panel margin-bottom-2x partner-list-item" style="position: relative;>">
 
                 <div class="partner-list-item-content">
                     <a href="{$sponsor.partner_url}">

@@ -796,7 +796,6 @@ button, .button {
   max-height: 960px;
   overflow: hidden;
   position: relative;
-  margin-top: 90px;
   position: relative;
   /*
       @else if $alias == desktop-lg {
@@ -2030,11 +2029,12 @@ label[for="nav-trigger"] {
   font-family: MS-Thin;
   src: url("../fonts/Montserrat-Thin.otf"); }
 .partner-list-item {
-  background: green;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #929292;
+  background: #f0f0f0;
+  border: 1px solid #dfdfdf;
   /*
       @else if $alias == desktop-lg {
   	@media (min-width: 1101px)  { 
@@ -2434,7 +2434,8 @@ hr {
     min-height: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 90px; }
     #wrapper #content.content-dark-themed {
       background: #070707; }
       #wrapper #content.content-dark-themed h1 {
